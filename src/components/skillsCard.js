@@ -1,15 +1,23 @@
 import React, { Component } from 'react'
 import Card from 'react-bootstrap/Card'
 import htmlLogo from './img/htmlLogoSmall.png'
-import cssLogo from './img/cssLogo.jpeg'
+import cssLogo from './img/cssLogo.png'
 import jsLogo from './img/jsLogo.png'
 import reactLogo from './img/reactLogo.png'
+import gitLogo from './img/gitLogo.png'
 
 export class SkillsCard extends Component {
     render() {
         return (
             <div className='container'>
                 <div className='row'>
+                <Card style={styles} className='col' >
+                    <Card.Img  top src={gitLogo} />
+                    <Card.Title>GITHUB</Card.Title>
+                    <Card.Text>
+                        
+                    </Card.Text>
+                </Card> 
                 <Card style={styles} className='col' >
                     <Card.Img  top src={htmlLogo} />
                     <Card.Title>HTML 5</Card.Title>
